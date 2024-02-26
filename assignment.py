@@ -59,3 +59,16 @@ except FileNotFoundError:
 weather = input("Enter the weather: sunny, rainy, or cold: ")
 clothing = "sunglasses" if weather == "sunny" else "umbrella" if weather == "rainy" else "sweater"
 print(clothing)
+
+# 5. The Silent Logger: System Monitor
+# Task 1: Code Correction
+# Task 2: System Check
+import random
+
+cpu_usage = random.randint(0, 100)
+memory_usage = random.randint(0, 100)
+disk_space = random.randint(0, 100)
+if cpu_usage > 90 and memory_usage > 90 and disk_space > 90:
+    print("High CPU, memory, and disk space usage!")
+elif cpu_usage > 80 and cpu_usage <= 90 or memory_usage > 80 and memory_usage <= 90 or disk_space > 80 and disk_space <= 90:
+    pass
